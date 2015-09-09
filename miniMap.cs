@@ -17,6 +17,7 @@ Create Panel
 		2. Enemy Blip  - set color and scale
 	Add MiniMap Script
 		Target = player blip
+		Change the execution order to process the mini map script first before the blip script
 	Add UI Image - Level Texture
 		Set scale	
 
