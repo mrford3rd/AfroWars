@@ -7,7 +7,8 @@ Each level last longer and longer. High scores page will have two list high scor
 
 Credits: 
 
-Concept: Tylila Ford
+Concept: Tylila Ford\n
+Code: Hillary Ford
+
 Tutorial: Unity3d
-Code: Unity3d and Hillary Ford
 Site: http://unity3d.com/learn/tutorials/projects/survival-shooter-project
