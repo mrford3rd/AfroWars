@@ -1,1 +1,23 @@
+This mini_map is based off the new Unity 5 UI 
+https://www.youtube.com/watch?v=EeyZ2y2Jpz4
 
+Use Instructions: 
+Player Object
+	Add blip script
+	Target = Player
+	
+Enemy Object
+	Add blip script
+	Target = Enemy
+	
+Create Panel
+	Anchor to Corner
+	Add two UI Images
+		1. Player Blip - set color and scale
+		2. Enemy Blip  - set color and scale
+	Add MiniMap Script
+		Target = player blip
+		Change the execution order to process the mini map script first before the blip script
+	Add UI Image - Level Texture
+		Set scale	
+Note: Requiers miniMapBlip script
