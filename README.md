@@ -7,7 +7,8 @@ Each level last longer and longer. High scores page will have two list high scor
 
 Credits: 
 
-Concept: Tylila Ford\n
+Concept: Tylila Ford
+
 Code: Hillary Ford
 
 Tutorial: Unity3d
