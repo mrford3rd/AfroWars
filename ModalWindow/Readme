@@ -2,3 +2,6 @@ This will add Dialoge boxes to the game
 
 Now when the player hits quit it will ask a question if they want to quit
 because if you hit esc on accident it does not end the game
+
+These Scripts come from Unity Live Tutorials
+http://unity3d.com/learn/tutorials/modules/intermediate/live-training-archive/modal-window-pt2
