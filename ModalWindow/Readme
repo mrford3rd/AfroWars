@@ -1,0 +1,4 @@
+This will add Dialoge boxes to the game
+
+Now when the player hits quit it will ask a question if they want to quit
+because if you hit esc on accident it does not end the game
