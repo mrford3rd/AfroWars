@@ -31,21 +31,26 @@ public class MiniMap : MonoBehavior
 {
 	public Transform Target;
 	public float ZoomLevel = 10f;
+	public bool LockRotation = false;
 	
 	Vector2 XRotation = Vector2.right;
 	Vector2 YRotation = Vector2.up;
 	
 	void LateUpdate()
 	{
-		XRotation = new Vector2(Target.right.x, -Target.right.z);	
-		YRotation = new Vector2(-Target.forward.x, Target.forward.z);
+		if (!LockRotation)
+		{
+			XRotation = new Vector2(Target.right.x, -Target.right.z);	
+			YRotation = new Vector2(-Target.forward.x, Target.forward.z);	
+		}
+		
 	}
 	
 	public Vector2 TransformfromPosition(Vector3 position)
 	{
 		Vector3 offset = position - Target.position;
 		Vector2 newPosition = offset.x * XRotation;
-		newPosition += offset.z * YRotation;
+		        newPosition += offset.z * YRotation;
 		
 		newPosition *= ZoomLevel;
 		
@@ -54,7 +59,10 @@ public class MiniMap : MonoBehavior
 	
 	public Vecoter3 TransformRotation(Vector3 rotation)
 	{
-		return new Vecoter3(0,0, Target.eulerAngles.y - rotation.y)	;
+		if(LockRotation)
+			return new Vector3 (0,0, -rotation.y)
+		else
+			return new Vecoter3(0,0, Target.eulerAngles.y - rotation.y)	;
 	}
 	
 	}

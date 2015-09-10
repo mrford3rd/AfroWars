@@ -22,7 +22,8 @@ public class miniMapBlip : MonoBehavior
 	public bool KeepInBounds = true;
 	public bool LockScale = false;
 	public bool LockRotation = false;
-	public float MinScale = 1f;
+	public float MinScale = .2f;
+	
 	MiniMap map;
 	RectTransform myRectTransform;
 	
